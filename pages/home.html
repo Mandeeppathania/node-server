@@ -1,14 +1,25 @@
-node-server
-│
-├── pages
-│   ├── home.html
-│   ├── about.html
-│   ├── contact.html
-│   └── 404.html
-│
-├── public
-│   └── style.css
-│
-├── server.js
-│
-└── package.json
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <!-- Main content of Home page -->
+    <div class="container">
+        <h1>Welcome to My Node.js Website</h1>
+        <p>
+            This website is created using Node.js HTTP module.
+        </p>
+    </div>
+</body>
+</html>

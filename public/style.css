@@ -1,0 +1,79 @@
+/* Remove default browser spacing */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Style the body */
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+/* Navigation bar */
+nav
+{
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+/* Navigation links */
+nav a
+{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+/* Hover effect for navigation */
+nav a:hover
+{
+    color: yellow;
+}
+/* Main content container */
+.container
+{
+    text-align: center;
+    margin-top: 80px;
+}
+/* Heading style */
+h1
+{
+    color: navy;
+    margin-bottom: 20px;
+}
+/* Paragraph style */
+p
+{
+    font-size: 18px;
+    margin-top: 15px;
+}
+/* Remove bullets from list */
+ul
+{
+    list-style: none;
+    margin-top: 20px;
+}
+/* Style list items */
+li
+{
+    margin: 10px;
+    font-size: 20px;
+}
+/* Button-like link */
+.container a
+{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* Hover effect for button */
+.container a:hover
+{
+    background-color: darkblue;
+}
