@@ -1,135 +1,67 @@
 # Node.js Web Server
 
-## Project Overview
+## About
+I made this project to learn how a web server works in Node.js.
+In this project, I used the HTTP module to create a server. The server checks which page the user wants and sends that page to the browser. If the page is not found, it shows a 404 page.
 
-This project is created using the Node.js HTTP module. The main objective is to understand how a web server works and how different web pages can be served based on different routes.
+## What I Used
+Node.js
+JavaScript
+HTML
+CSS
 
-The server handles multiple routes like Home, About, Contact and Services. It also displays a custom 404 page if the requested route does not exist.
+## Project Files
+server.js
+pages folder
+public folder
+README.md
+package.json
 
----
-
-## Features
-
-* Created a web server using Node.js.
-* Used the built-in HTTP module.
-* Implemented routing for different pages.
-* Displays Home, About, Contact and Services pages.
-* Added a custom 404 error page.
-* Used asynchronous file reading with `fs.readFile()`.
-* Added CSS styling to all pages.
-* Implemented proper HTTP status codes (200, 404 and 500).
-
----
-
-## Technologies Used
-
-* Node.js
-* JavaScript
-* HTML
-* CSS
-
----
-
-## Project Folder Structure
-
-```
-node-server
-│
-├── pages
-│   ├── home.html
-│   ├── about.html
-│   ├── contact.html
-│   ├── services.html
-│   └── 404.html
-│
-├── public
-│   └── style.css
-│
-├── server.js
-├── package.json
-└── README.md
-```
-
----
-
-## Available Routes
-
-| Route           | Description              |
-| --------------- | ------------------------ |
-| /               | Opens Home Page          |
-| /home           | Opens Home Page          |
-| /about          | Opens About Page         |
-| /services       | Opens Services Page      |
-| /contact        | Opens Contact Page       |
-| Any other route | Displays Custom 404 Page |
-
----
+## Pages in the Project
+Home Page
+About Page
+Services Page
+Contact Page
+404 Error Page
 
 ## How to Run the Project
-
-1. Open the project folder in VS Code.
-2. Open the terminal.
-3. Install dependencies (if required).
-
-```
-npm install
-```
-
-4. Start the server.
-
-```
+Open the project in VS Code.
+Open the terminal.
+Run this command.
+```bash
 node server.js
 ```
-
-5. Open your browser and visit:
-
+Now open your browser and go to
 ```
 http://localhost:3000
 ```
-
-You can also visit:
-
-* http://localhost:3000/home
-* http://localhost:3000/about
-* http://localhost:3000/services
-* http://localhost:3000/contact
-
----
-
+You can also open
+```
+http://localhost:3000/home
+http://localhost:3000/about
+http://localhost:3000/services
+http://localhost:3000/contact
+```
 ## How the Server Works
-
-When a user enters a URL in the browser, the browser sends a request to the Node.js server.
-
-The server checks the requested route using `req.url`.
-
-If the route exists, it reads the corresponding HTML file using `fs.readFile()` and sends it back to the browser with the correct HTTP status code.
-
-If the route does not exist, the server sends the custom 404 page.
-
-The CSS file is also served through the server so that all pages are properly styled.
-
----
+When a user opens the website, the browser sends a request to the server.
+The server checks the URL.
+If the page is available, it reads the HTML file and sends it to the browser.
+If the page is not available, it sends the 404 page.
+The server also sends the CSS file so that the pages look properly designed.
 
 ## What I Learned
+While making this project I learned how to create a web server.
+I learned how routing works.
+I learned the difference between request and response.
+I learned how to read HTML files using `fs.readFile()`.
+I also learned how to send CSS files and how to create a custom 404 page.
 
-While making this project, I learned:
-
-* How a Node.js server works.
-* Difference between request and response.
-* How routing is implemented.
-* How to serve HTML and CSS files.
-* What HTTP status codes are.
-* How asynchronous file reading works using `fs.readFile()`.
-* How to create a custom 404 page.
-
----
+## Problems I Faced
+At first I found it difficult to understand routing.
+I also had some confusion while serving the CSS file.
+After practicing and testing different routes, I understood how the server works.
 
 ## Future Improvements
-
-In future, this project can be improved by:
-
-* Using Express.js instead of the HTTP module.
-* Adding images and JavaScript files.
-* Creating a responsive website.
-* Connecting the server with a database.
-* Adding a contact form with backend functionality.
+In the future I want to make this project using Express.js.
+I also want to connect it with a database.
+I would like to add forms and make the website more interactive.

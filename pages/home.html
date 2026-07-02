@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <!-- Link the external CSS file -->
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav>
         <a href="/home">Home</a>
         <a href="/about">About</a>
         <a href="/services">Services</a>
         <a href="/contact">Contact</a>
     </nav>
-    <!-- Main content of Home page -->
-    <div class="container">
-        <h1>Welcome to My Node.js Website</h1>
+    <header class="hero">
+        <h1>Welcome to My Node.js Web Server</h1>
         <p>
-            This website is created using Node.js HTTP module.
+            This project demonstrates how routing works using the built-in HTTP module in Node.js.
+            Different URLs return different HTML pages through a simple server.
         </p>
-    </div>
+        <div class="hero-buttons">
+            <a href="/about" class="btn">
+                Learn More
+            </a>
+            <a href="/services" class="btn">
+                View Services
+            </a>
+        </div>
+    </header>
+    <section class="features">
+        <h2>Project Highlights</h2>
+        <div class="feature-list">
+            <div class="feature-box">
+                <h3>Routing</h3>
+                <p>
+                    The server checks the requested URL and returns the correct page.
+                </p>
+            </div>
+            <div class="feature-box">
+                <h3>Asynchronous File Handling</h3>
+                <p>
+                    HTML files are read using <strong>fs.readFile()</strong> so the server remains responsive.
+                </p>
+            </div>
+            <div class="feature-box">
+                <h3>Custom Error Page</h3>
+                <p>
+                    If the requested route is not available, a custom 404 page is displayed.
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

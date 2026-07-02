@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
-    <!-- Link the CSS file -->
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <!-- Navigation links -->
     <nav>
         <a href="/home">Home</a>
         <a href="/about">About</a>
         <a href="/services">Services</a>
         <a href="/contact">Contact</a>
     </nav>
-    <!-- About section -->
-    <div class="container">
-        <h1>About Us</h1>
-        <p>
-            This project demonstrates routing using the Node.js HTTP module.
-        </p>
-    </div>
+    <section class="about-page">
+        <div class="about-content">
+            <h1>About This Project</h1>
+            <p>
+                This website is built using the Node.js HTTP module.
+                It demonstrates how a server handles different routes
+                and returns the requested HTML page to the browser.
+            </p>
+        </div>
+        <div class="learning-box">
+            <h2>What I Learned</h2>
+            <ul>
+                <li>Creating a web server using Node.js.</li>
+                <li>Serving different HTML pages using routing.</li>
+                <li>Using HTTP status codes like 200 and 404.</li>
+                <li>Reading files asynchronously with fs.readFile().</li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
